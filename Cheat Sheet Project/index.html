@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/styles.css">
+        <title>My CSS Cheat Sheet</title>
+
+    </head>
+    <body>
+      <h1>CSS Selectors Cheat Sheet</h1>
+      <h2>Selectors and When to Use Them</h2>
+      <table>
+        <thead>
+         <tr>
+          <th>Selector Type</th>
+          <th>Name</th>
+          <th>When to use</th>
+          <th>Example</th>
+
+         </tr>
+        </thead>
+        <tbody>
+            <tr>
+             <td class="code">*</td>  
+             <td>Universal Selector</td> 
+             <td>This selector will style all elements in an html using css</td>
+             <td>* { }</td>
+            </tr>
+            <tr>
+             <td class="code">.classname</td>   
+             <td>Class Selector</td> 
+             <td>Allows css to style all elements with the given class attribute</td>
+             <td>. { }</td>
+            </tr>
+            <tr>
+             <td class="code">#</td>
+             <td>ID Selector</td>
+             <td>Allows css to style unique elements with the given id tribute</td>
+             <td># { }</td>
+            </tr>
+            <tr>
+              <td class="code">[ ]</td>
+              <td>Attribute Selector</td>
+              <td>Allows css to style specific attributes contained within elements</td>
+              <td>[ ] { }</td>
+              
+            </tr>
+            <tr>
+              <td class="code">type[attribute*=value]</td>
+              <td>Attribute Selector</td>
+              <td>Allows css to style specific elements which contain the attribute placed between the square brackets</td>
+              <td>img[src*='winter']</td>
+            </tr>
+            <tr>
+               <td class="code">selector:name</td>
+               <td>Pseudo Class</td>
+               <td>Allows css to change the elements behaviour on a website e.g. change colour when a user hovers over it</td>
+               <td>p:hover { }</td>
+            </tr>
+        </tbody>
+        </table>
+        
+        <h2>Specificity, Multiple Selectors and Chaining</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Specificity</th>
+              <th>Multiple Selectors</th>
+              <th>Chaining</th>
+              <th>Descendant Combinators</th>
+            </tr>
+            <tbody>
+              <tr>
+                <td>If an element is given both a class and an id attribute, the id attribute 
+                  is more specific so css will prioritise it.</td>
+                <td>Css can style multiple elements using a multiple selector as follows:
+                 <span class="multiple">h2,p{}</span> 
+                </td>
+                <td>Chaining allows css to style classes attached to a specific element as follows:
+                  <span class="multiple">h2.destination.{}</span> If another element has the same class, 
+                  it will not be affected by css</td>
+                <td>Descandant combinators allow css to style all of the descendants of a specific element or attribute as follows:
+                  <span class="multiple">.main-list li{}</span> css will apply the styling to all of 
+                  the list elements which are descendants of .main-list.
+                </td>
+              </tr>
+               
+            </tbody>
+           
+
+
+          </thead>
+
+
+        
+       
+
+
+
+
+
+
+    
+    
+    
+    </body>
+</html>
